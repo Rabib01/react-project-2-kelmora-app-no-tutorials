@@ -1,1 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* font styles */
+  --font-headlines: "Newsreader", "sans-serif";
+  --font-bodyPrimary: "Public Sans", "serif";
+  --font-bodySecondary: "Manrope", "serif";
+
+  /* font colors */
+  --color-ink: #1b2430;
+  --color-deep: #26567a;
+  --color-gold: #c9922a;
+  --color-sage: #4f7a63;
+  --color-rust: #b4523a;
+}
+
+body {
+  @apply overflow-x-hidden bg-zinc-100 antialiased;
+}

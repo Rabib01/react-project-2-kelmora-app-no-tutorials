@@ -1,0 +1,17 @@
+Divide and conquer baby, that is all there is to it.  
+
+⚠️ ✅
+
+Add The Claude Recommended Colors to the custom fonts ✅ 
+Overflow x hidden - add this class ✅ 
+Give it a preferrable background color ✅
+
+Seprate the nav rail
+nav bar
+separate dashboard
+   
+Put the first option (dashboard) on the nav-rail
+
+
+
+Create the dummy data 
