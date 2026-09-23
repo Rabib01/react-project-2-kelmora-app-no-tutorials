@@ -1,0 +1,36 @@
+Divide and conquer baby, that is all there is to it.  
+
+Add The Claude Recommended Colors to the custom fonts ✅ 
+Overflow x hidden - add this class ✅ 
+Give it a preferrable background color ✅
+
+components : 
+join all of the separate components ✅
+
+⚠️
+implemnet context api to handle the search State - However see Taposh Da's videos first  
+Things to apply for now 
+use the context api to get the data from the search bar  
+use the context to get the data to change themes between light and dark
+
+then see one video on how you can be use the context api to implement the studpid search state 
+
+
+Seprate the nav rail ✅
+nav bar ✅
+separate dashboard ✅
+   
+Put the first option (dashboard) on the nav-rail ✅
+
+Things to learn 
+https://www.youtube.com/watch?v=nhzLVluv1eM All of the rest of the patterns from the video 
+Context api
+React Router DOM 
+Recharts 
+Custom Hooks
+
+
+Things to practise 
+
+Tapas Da's Facade Pattern 
+Tapas Da's Strategy Patterns 

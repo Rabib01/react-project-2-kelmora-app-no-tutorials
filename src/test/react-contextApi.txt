@@ -1,0 +1,59 @@
+Fuck the official documentation - giving us so hard examples :: 
+
+Context Api
+ - Steps 
+ -  - create a file for your context ThemeContext.js 
+ -  - import all of the necessary functins like useState, useContext and createContext from React 
+ -  -  - createContext - function to create a new context object 
+ -  -  - useState - To manage state inside provider
+ -  -  - useContext - To access the context in other components 
+ -  - Create the context Object 
+ -  -  - export const ThemeContext = createContext()
+ -  -  - function provided by react 
+ -  -  - whhen called, creates a new context object 
+ -  -  - cotext object has two parts - Provider -> this is a react component. It wraps parts of your app and supplies data to all child components 
+ -  -  - context object has two prts - Consumer -> This is a React component (or Hook) that reads the data from the Provider 
+ -  -  - Provider puts something inside the box; Consuner cab open the box and get the value 
+ -  -  - Provider 
+ -  -  -  - The Provider is a special component from React.
+ -  -  -  - Its job is to hold and supply the data you want to share.
+ -  -  -  - Any child component inside the Provider can access this data.
+ -  -  -  - <ThemeContext.Provider value={{ theme, toggleTheme }}>
+ -  -  -  -  {children}
+-  -  -  - </ThemeContext.Provider>
+ -  -  -  - Value, = the data we want to share - string, number, object, function
+ -  -  -  - Children -> the components that can access this data 
+import React, { createContext, useState } from 'react';
+
+// 1. Create Context object
+export const ThemeContext = createContext();
+
+export const ThemeProvider = ({ children }) => {
+  // 2. Create state for theme
+  const [theme, setTheme] = useState('light');
+
+  // 3. Create function to change theme
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+  // 4. Wrap children with Provider and pass value
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children} {/* All components inside this Provider can access theme */}
+    </ThemeContext.Provider>
+  );
+};
+
+
+This line makes an empty Context object.
+By itself, it doesn’t hold any data (like light or dark).
+It’s just a box that can be filled with something later.
+
+<ThemeContext.Provider value={{ theme, toggleTheme }}>
+   {children}
+</ThemeContext.Provider>
+Provider’s job = fill the box (Context) with data.
+Whatever you put in the value prop (here theme and toggleTheme) gets stored inside the Context, so any component that uses this context can access it.
+
+Baa;er jinish mathai dhuktesenna baal!!
