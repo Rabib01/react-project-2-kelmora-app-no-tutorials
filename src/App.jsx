@@ -5,13 +5,15 @@ import viteLogo from "./assets/vite.svg";
 import "./App.css";
 
 import FontText from "./components/FontText";
-import NavRail from "./components/NavRail";
+import NavRail from "./components/navigation/NavRail";
+import Navbar from "./components/navigation/NavBar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <Navbar />
       <NavRail />
 
       {/* <FontText /> */}

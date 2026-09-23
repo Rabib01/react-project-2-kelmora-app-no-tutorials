@@ -6,8 +6,15 @@ Add The Claude Recommended Colors to the custom fonts ✅
 Overflow x hidden - add this class ✅ 
 Give it a preferrable background color ✅
 
+components : 
+create all of the separate components 
+join all of the separate components 
+implemnet context api to handle the search State - However see Taposh Da's videos first 
+then see one video on how you can be use the context api to implement the studpid search state 
+
+
 Seprate the nav rail
-nav bar
+nav bar ✅
 separate dashboard
    
 Put the first option (dashboard) on the nav-rail
@@ -15,3 +22,7 @@ Put the first option (dashboard) on the nav-rail
 
 
 Create the dummy data 
+
+libraries to practise 
+- recharts 
+- gsap for some of the basic functionalities 
