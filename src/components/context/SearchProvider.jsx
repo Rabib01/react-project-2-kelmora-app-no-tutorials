@@ -18,10 +18,11 @@ export default function SearchProvider({ children }) {
   );
 }
 
-// When we do this
-// function SearchProvider({ children })
-
-// React automatically puts the App into the Provider's children prop
-// <SearchProvider>
-//   <App />
-// </SearchProvider>
+{
+  // When we do this
+  // function SearchProvider({ children })
+  // React automatically puts the App into the Provider's children prop
+  // <SearchProvider>
+  //   <App />
+  // </SearchProvider>
+}

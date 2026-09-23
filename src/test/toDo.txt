@@ -10,8 +10,9 @@ join all of the separate components ✅
 ⚠️
 implemnet context api to handle the search State - However see Taposh Da's videos first  
 Things to apply for now 
-use the context api to get the data from the search bar  
-use the context to get the data to change themes between light and dark
+use the context api to get the data from the search bar ✅  
+use the context to get the data to change themes between light and dark - practise this one more time
+use Faker.js to create 300 random students name with ids  
 
 then see one video on how you can be use the context api to implement the studpid search state 
 
