@@ -54,7 +54,18 @@ react design pattern to apply from tapas Da's video: https://www.youtube.com/wat
     -  - authentication - otp + magic authentication + iserName + passwprd - mpt a good idea to put all of these things in a single kind of applicaiton 
     -  - soln - strategy pattern - strategy is developed inside of hte component itself and - strategy of what it is that you want for similar kind of data 
     -  - strategy developed inside the component and give you what you need at the end
-    -  - strategy - BarChartStraategy.jsx + NumberStrtategy.jsx 
+    -  - strategy - BarChartStraategy.jsx + NumberStrtategy.jsx - 
+    -  -  - steps 
+    -  -  - chartStrategy prop passed to component revenue widget 
+    -  -  - if a consumer needs a pie - it will pass a pie chart - if the consumer needs a bar - it will pass a bar chart 
+    -  -  - Same datas different components - <Revenue Widget title="Monthly Revenue" chartStrategy={BarChartStrategy}> 
+    -  -  - Same datas different components - <Revenue Widget title="Latest Converstion" chartStrategy={NumberStrategy}>
+    -  -  - this is how the different strategies are laid out 
+    -  -  - this is the best part - this component can now be used anywhere - for all of the switch case type scenarios - all of depending on the same kind of data - this is where we are going to use the strategy pattern 
+    -  -  -   
+    -  -  Its all about the tought process - when we should be thinking about the facade patterns and when we should be thinking about the strategy patterns. 
+    -  -  When to use what ? see the code for each patterns from dada's github 
+
 
 
 
