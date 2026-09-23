@@ -7,17 +7,18 @@ Overflow x hidden - add this class ✅
 Give it a preferrable background color ✅
 
 components : 
-create all of the separate components 
-join all of the separate components 
-implemnet context api to handle the search State - However see Taposh Da's videos first 
+join all of the separate components ✅
+
+⚠️
+implemnet context api to handle the search State - However see Taposh Da's videos first  
 then see one video on how you can be use the context api to implement the studpid search state 
 
 
-Seprate the nav rail
+Seprate the nav rail ✅
 nav bar ✅
-separate dashboard
+separate dashboard ✅
    
-Put the first option (dashboard) on the nav-rail
+Put the first option (dashboard) on the nav-rail ✅
 
 
 
@@ -26,3 +27,34 @@ Create the dummy data
 libraries to practise 
 - recharts 
 - gsap for some of the basic functionalities 
+- react design patterns 
+
+react design pattern to apply from tapas Da's video: https://www.youtube.com/watch?v=nhzLVluv1eM
+ Notes (Short Versions)
+    - Very simple applications 
+    - Bulk Export CSV file - generate csv + error hit on randomness
+    - Revenue based on charts 
+    - Live Transaction table - displayed based on virtualized - not painting everything in the dom at the same time - skeleton streaming structure on refresh - Sumit Vai's streaming would also be practised - simulate crash and recover from crash state 
+    - 
+    - revenue 
+    -  - pulls data and gives widgets - monthly renvenue and MRR 
+    -  - the charts creation - how to approach this thing ? 
+    -  - Originally has a bar chart and a MRR stat div where it only shows the last months revenue and this months revenue 
+    -  - How to add a pie chart if a manager asks us this question ? 
+    -  - Good practise is to separate all of the pies and bars and MRR divs inside of their own components 
+    -  - One problem that will persist is that this will still act as a switch case even if refactored into different components 
+    -  - We do not want a monolith component - break it apart and make smaller components 
+    -  - Break component apart and separate data calculation and data management 
+    -  - fetching - what if we get the data and then pass them as props to components 
+    -  - what if we have to reuse this particular portion of reusing data ?? we cannot do it -- so the data fetching also we have to take out of the component 
+    -  - soln - Create a custom hook - for the stateful logic sharing - instead of writing the effect directly inside of the Widget.jsx
+    -  - call this as a hook amd in a facade pattern - take the complexity out and hidint it - more completxity they dont hav eto touch our components - hide the complexity from the main core application - this is what the facade patterns says 
+    -  - now what is the main complexity of the renvenue widget ? calculating the graphs and the revenue that is the main complexity - keepp them in hte facade pattern 
+    -  - Pies and Ghatt charts - all of them are taking the data from the same widget - apply the data to the widget - it will know the logic and will take care of whether it will create a bar or a number or a pie or a timeline chart 
+    -  - authentication - otp + magic authentication + iserName + passwprd - mpt a good idea to put all of these things in a single kind of applicaiton 
+    -  - soln - strategy pattern - strategy is developed inside of hte component itself and - strategy of what it is that you want for similar kind of data 
+    -  - strategy developed inside the component and give you what you need at the end
+    -  - strategy - BarChartStraategy.jsx + NumberStrtategy.jsx 
+
+
+
