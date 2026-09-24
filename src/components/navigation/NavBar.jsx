@@ -1,3 +1,4 @@
+import LightDark from "./LightDark";
 import NotificationButton from "./NotificationButton";
 import SearchBar from "./SearhBar";
 import UserMenu from "./UserMenu";
@@ -19,6 +20,8 @@ export default function Navbar() {
         {/* Right side */}
         <div className="flex shrink-0 items-center gap-2 sm:gap-4">
           <NotificationButton />
+          <LightDark />
+
           <UserMenu />
         </div>
       </div>
